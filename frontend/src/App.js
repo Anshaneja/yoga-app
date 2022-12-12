@@ -1,7 +1,6 @@
 
 import './App.css';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
-import PaymentPage from './Pages/PaymentPage';
 import Home from './Pages/Home';
 import ExistingUser from './Pages/ExistingUser';
 import NewUser from './Pages/NewUser';
