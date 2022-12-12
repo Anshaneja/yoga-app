@@ -9,8 +9,7 @@ function App() {
   const routes = useRoutes([
     {path:'/new' , element: <NewUser />},
     {path:'/' , element: <Home />},
-    {path:'/existing' , element: <ExistingUser />},
-    {path:'/payment', element: <PaymentPage />}
+    {path:'/existing' , element: <ExistingUser />}
   ])
   return routes;
   // return (
