@@ -35,6 +35,9 @@ OurApp.post("/member/new", async (req, res) => {
       if(age < 18 || age > 65){
         return res.status(400).json({"error" : "Age should be between 18 and 65"});
       }
+      if(phone.length !== 10){
+        return res.status(400).json({"error" : "Phone number should have 10 digits"});
+      }
       // CompletePayment() function is currently returning true
       const result = CompletePayment(paymentInfo);
       if(!result){
@@ -91,7 +94,7 @@ OurApp.post("/member/new", async (req, res) => {
       .catch((err) => {
         console.log(err);
       });
-      return resjson({message: "success"});
+      return res.json({message: "success"});
     } catch (error) {
       return res.json({ error: error.message });
     }
