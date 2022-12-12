@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input-field{
+  background-color: white;;
+  padding: 6px;
+  border-radius: 0.25rem;
+}
+.parent{
+  background: url("/src/assets/bg.jpg") no-repeat;
+  background-size: cover;
+}
+.input-field:focus{
+  outline: none;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
